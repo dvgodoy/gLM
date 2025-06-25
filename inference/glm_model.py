@@ -12,8 +12,8 @@ class MultiPredMaskedLMOutput(ModelOutput):
     Output class for multi-prediction masked language modeling.
 
     Attributes:
-        logits_all_preds (torch.FloatTensor): Logits for all prediction heads.
-        probs (Optional[torch.FloatTensor]): Predicted class probabilities (if enabled).
+        logits_all_preds (torch.FloatTensor): Logits for all predictions.
+        probs (Optional[torch.FloatTensor]): Predicted class probabilities.
         last_hidden_state (Optional[Tuple[torch.FloatTensor]]): Final hidden layer output from the model.
         contacts (Optional[torch.FloatTensor]): Contact prediction matrix (e.g., for protein residues).
         all_hidden_states (Optional[Tuple[torch.FloatTensor]]): All hidden layer states, if requested.
